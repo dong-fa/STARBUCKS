@@ -32,6 +32,9 @@
       integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./js/main.js"></script>
   </head>
   <body>
@@ -392,6 +395,75 @@
         </div>
       </div>
     </section>
-    <section class="notice"></section>
+    <!-- 공지 사항 영역 -->
+    <section class="notice">
+      <div class="notice-line">
+        <div class="bg-left"></div>
+        <div class="bg-right"></div>
+        <div class="inner">
+          <div class="inner__left">
+            <h2>공지사항</h2>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" class="slide-item">크리스마스 & 연말 연시 매장 영업시간 변경 안내 </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" class="slide-item">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트 </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" class="slide-item">스타벅스 코리아 어플리케이션 버전 업데이트 안내</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" class="slide-item">[당첨자 발표] 뉴이어 전자영수증 이벤트</a>
+                </div>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="more">
+              <span class="material-symbols-outlined"> add_circle </span>
+            </a>
+          </div>
+          <div class="inner__right">
+            <h2>스타벅스 프로모션</h2>
+            <div class="promo-container">
+              <span class="material-symbols-outlined"> upload </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="promotion">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide1.jpg" alt="슬라이드 이미지1" />
+              <a href="javascript:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide2.jpg" alt="슬라이드 이미지2" />
+              <a href="javascript:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide3.jpg" alt="슬라이드 이미지3" />
+              <a href="javascript:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide4.jpg" alt="슬라이드 이미지4" />
+              <a href="javascript:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide5.jpg" alt="슬라이드 이미지5" />
+              <a href="javascript:void(0)" class="btn">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+          <span class="material-symbols-outlined"> arrow_back </span>
+        </div>
+        <div class="swiper-button-next">
+          <span class="material-symbols-outlined"> arrow_forward </span>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

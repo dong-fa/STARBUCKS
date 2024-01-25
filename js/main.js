@@ -42,3 +42,44 @@ fadeEls.forEach(function (fadeEl, index) {
     opacity: 1,
   });
 });
+
+const noticeSwiper = new Swiper(".notice-line .swiper", {
+  direction: "vertical",
+  loop: true,
+  autoplay: true,
+});
+
+const promotionSwiper = new Swiper(".promotion .swiper", {
+  direction: "horizontal",
+  slidesPerView: 3,
+  spaceBetween: 10,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  pagination: {
+    el: ".promotion .swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    prevEl: ".promotion .swiper-button-prev",
+    nextEl: ".promotion .swiper-button-next",
+  },
+});
+
+const promotionEl = document.querySelector(".promotion");
+const togglePromotion = document.querySelector(".promo-container");
+
+let togglePromotionHanddler = false;
+
+togglePromotion.addEventListener("click", function () {
+  togglePromotionHanddler = !togglePromotionHanddler;
+  if (togglePromotionHanddler) {
+    promotionEl.classList.add("hide");
+    console.log("하이드");
+  } else {
+    promotionEl.classList.remove("hide");
+    console.log("안하이드");
+  }
+});
