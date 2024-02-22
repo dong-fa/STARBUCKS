@@ -77,9 +77,7 @@ togglePromotion.addEventListener("click", function () {
   togglePromotionHanddler = !togglePromotionHanddler;
   if (togglePromotionHanddler) {
     promotionEl.classList.add("hide");
-    console.log("하이드");
   } else {
     promotionEl.classList.remove("hide");
-    console.log("안하이드");
   }
 });

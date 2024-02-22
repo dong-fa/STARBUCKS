@@ -32,6 +32,7 @@ a {
   box-sizing: border-box;
   display: block;
   transition: 0.4s;
+  background-color: transparent;
 }
 .btn:hover {
   background-color: #333;
@@ -43,6 +44,7 @@ a {
 }
 
 /* 세부요소 */
+/* 헤더 */
 header {
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
@@ -221,6 +223,7 @@ header .badges .badge {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+
 /* 비주얼 */
 .visual {
   margin-top: 120px;
@@ -272,6 +275,7 @@ header .badges .badge {
 .visual .fade-in {
   opacity: 0;
 }
+
 /* 노티라인 */
 .notice {
 }
@@ -406,6 +410,7 @@ header .badges .badge {
 .notice .promotion .swiper-pagination {
   position: absolute;
   bottom: 40px;
+  z-index: 0;
 }
 .notice .promotion .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
@@ -413,6 +418,7 @@ header .badges .badge {
   background-color: transparent;
   background-image: url("../images/promotion_slide_pager.png");
   outline: none;
+  z-index: 0;
 }
 .notice .promotion .swiper-pagination .swiper-pagination-bullet-active {
   background-image: url("../images/promotion_slide_pager_on.png");
@@ -448,4 +454,89 @@ header .badges .badge {
 .notice .promotion .swiper-button-next:hover {
   background-color: #333;
   color: #fff;
+}
+
+/* 리워드 */
+.rewards {
+  position: relative;
+}
+.rewards .bg-left {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #272727;
+  top: 0;
+  left: 0;
+}
+.rewards .bg-right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #d5c798;
+  top: 0;
+  right: 0;
+}
+.rewards .inner {
+  background-image: url("../images/rewards.jpg");
+  height: 241px;
+}
+.rewards .btn-group {
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+}
+.rewards .btn-group .btn.sighup {
+  margin-right: 10px;
+}
+.rewards .btn-group .btn.login {
+  width: 110px;
+}
+.rewards .btn-group .btn.gift {
+  margin-top: 10px;
+  width: 250px;
+}
+
+/* 비디오 영역 */
+.video {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  background-color: #333;
+}
+.video .videoarea {
+  width: 1920px;
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  margin-left: calc(1920px / -2);
+  top: 50%;
+  margin-top: calc(1920px * 9 / 16 / -2);
+}
+.video .videoarea::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.video .videocover {
+  background-image: url("../images/video_cover_pattern.png");
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
