@@ -81,16 +81,14 @@ const promotionSwiper = new Swiper(".promotion .swiper", {
 });
 
 const awardsSwiper = new Swiper(".awards .swiper", {
-  // direction: 'horizontal', // 수평 슬라이드
-  autoplay: true, // 자동 재생 여부
-  loop: true, // 반복 재생 여부
-  spaceBetween: 30, // 슬라이드 사이 여백
-  slidesPerView: 5, // 한 번에 보여줄 슬라이드 개수
-  // slidesPerGroup: 5, // 한 번에 슬라이드 할 개수(전체 개수로 나뉘어야 함)
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 5,
+
   navigation: {
-    // 슬라이드 이전/다음 버튼 사용 여부
-    prevEl: ".awards .swiper-prev", // 이전 버튼 선택자
-    nextEl: ".awards .swiper-next", // 다음 버튼 선택자
+    prevEl: ".awards .swiper-prev",
+    nextEl: ".awards .swiper-next",
   },
 });
 
